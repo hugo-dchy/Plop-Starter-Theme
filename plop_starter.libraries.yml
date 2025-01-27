@@ -9,7 +9,6 @@ plop-starter-theme:
       css/ckeditor.css: {}
     layout:
       css/layout/layout.css: {}
-      css/layout/layout-builder.css: {}
       css/layout/spacing.css: {}
     component:
       css/layout/header.css: {}

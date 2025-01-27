@@ -6,7 +6,9 @@
  * Also add grid common rules.
  */
 
-
+.grid-row .layout {
+  padding: 0;
+}
 
 /**
  * Layout content
