@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Image styles
+ */
+
+.image {
+  width: 100%;
+}
+.image img {
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,20 @@
+/**
+ * @file
+ * The footer components.
+ *
+ * It includes styles for the footer itself and its
+ * components.
+ */
+
+/**
+ * Global footer rules
+ */
+
+.main__footer {
+  margin-top: auto;
+}
+
+/**
+ * Main Footer
+ */
+

@@ -1,0 +1,80 @@
+/**
+ * @file
+ * User styles
+ * Use in templates\layout\page--user--login.html.twig
+ * Use in templates\layout\page--user--password.html.twig
+ */
+
+
+.user-page h1 {
+  text-align: center;
+}
+
+/**
+ * User Log Block
+ */
+
+.user-login-form,
+.user-pass {
+  padding: 1rem 1rem 3rem 1rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.user-login-form input[type="text"],
+.user-login-form  input[type="email"],
+.user-pass input[type="text"],
+.user-pass  input[type="email"] {
+  max-width: none;
+}
+.user-login-form .form-item,
+.user-pass .form-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.user-login-form .form-item .form-text,
+.user-pass .form-item .form-text {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.user-login-form .form-submit,
+.user-pass .form-submit {
+  background: var(--color-system--2);
+  color: var(--color-system--4);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+.user-login-form .form-submit:hover,
+.user-pass .form-submit:hover {
+  background: var(--color-system--3);
+  color: var(--color-system--2);
+}
+@media screen and (min-width: 700px) {
+  .user-login-form .form-item,
+  .user-pass .form-item {
+    width: 50%;
+    max-width: 745px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .user-login-form .form-item,
+  .user-pass .form-item {
+    width: 33.333%;
+    max-width: 438px;
+  }
+}

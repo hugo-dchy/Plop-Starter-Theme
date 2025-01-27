@@ -1,0 +1,91 @@
+plop-starter-theme:
+  version: 1.x
+  css:
+    base:
+      css/fonts.css: {}
+      css/variables.css: {}
+      css/styles.css: {}
+      css/forms.css: {}
+      css/ckeditor.css: {}
+    layout:
+      css/layout/layout.css: {}
+      css/layout/layout-builder.css: {}
+      css/layout/spacing.css: {}
+    component:
+      css/layout/header.css: {}
+      css/layout/footer.css: {}
+      css/components/cta.css: {}
+      css/components/search.css: {}
+  js:
+    js/scripts.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+
+
+# Base Libraries
+
+page:
+  version: 1.x
+  css:
+    component:
+      css/base/page.css: {}
+user:
+  version: 1.x
+  css:
+    component:
+      css/base/user.css: {}
+admin-tabs:
+  version: 1.x
+  css:
+    component:
+      css/base/admin-tabs.css: {}
+maintenance:
+  version: 1.x
+  css:
+    component:
+      css/base/maintenance.css: {}
+
+
+# Views Libraries
+
+listing:
+  version: 1.x
+  css:
+    component:
+      css/view/listing.css: {}
+
+# Components Libraries
+
+breadcrumb:
+  version: 1.x
+  css:
+    component:
+      css/components/breadcrumb.css: {}
+image:
+  version: 1.x
+  css:
+    component:
+      css/components/image.css: {}
+section:
+  version: 1.x
+  css:
+    component:
+      css/components/section.css: {}
+pagination:
+  version: 1.x
+  css:
+    component:
+      css/components/pagination.css: {}
+  js:
+    js/components/pagination.js: {}
+cookies:
+  version: 1.x
+  css:
+    component:
+      css/components/cookies.css: {}
+text:
+  version: 1.x
+  css:
+    component:
+      css/components/text.css: {}

@@ -1,0 +1,13 @@
+/**
+ * Font Name
+ */
+
+@font-face {
+  font-family: 'Font Name';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('') format('woff2'),
+    url('') format('woff');
+    font-display: swap;
+}

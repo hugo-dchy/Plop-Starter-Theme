@@ -1,0 +1,23 @@
+/**
+ * @file
+ * Ckeditor styles
+ * Use Globaly
+ */
+
+
+/**
+ * Font Size
+ */
+
+.heading-size-xs {
+  font-size: var(--heading-size-xs);
+}
+.heading-size-s {
+  font-size: var(--heading-size-s);
+}
+.heading-size-m {
+  font-size: var(--heading-size-m);
+}
+.heading-size-l {
+  font-size: var(--heading-size-l);
+}

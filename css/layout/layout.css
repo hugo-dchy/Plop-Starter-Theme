@@ -1,0 +1,59 @@
+/**
+ * @file
+ * Is the responsive layout composition.
+ *
+ * Is intented to set basic layout rules to regions and global blocks.
+ * Also add grid common rules.
+ */
+
+
+
+/**
+ * Layout content
+ */
+
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main__content {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+}
+.layout__region--content {
+  display: flex;
+  flex-direction: column;
+}
+
+/**
+ * Grid row
+ */
+
+
+.grid-row {
+	padding: 0;
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+}
+@media all and (min-width: 750px) {
+  .grid-row {
+    width: 82%;
+  }
+}
+@media all and (min-width: 1300px) {
+  .grid-row--12{
+    max-width: 1400px;
+  }
+  .grid-row--10{
+    max-width: 1166px;
+  }
+  .grid-row--8{
+    max-width: 933px;
+  }
+  .grid-row--6{
+    max-width: 700px;
+  }
+}

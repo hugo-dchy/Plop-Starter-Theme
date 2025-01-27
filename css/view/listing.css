@@ -1,0 +1,45 @@
+.view-content .page {
+  background-color: red;
+  height: 300px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+/**
+ * listing-page
+ */
+
+.listing {
+  padding: 2.5rem 0 5rem;
+}
+.listing .view-content {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+}
+.listing .view-empty {
+  text-align: center;
+}
+@media all and (min-width: 500px) {
+  .listing .view-content {
+    grid-template-columns: repeat(2, calc(50% - 0.75rem));
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+  }
+}
+@media all and (min-width: 800px) {
+  .listing {
+    padding: 4.5rem 0 8rem;
+  }
+  .listing .view-content {
+    grid-template-columns: repeat(3, calc(33% - 1rem));
+    gap: 1.5rem;
+  }
+}
+@media all and (min-width: 1200px) {
+  .listing .view-content {
+    grid-template-columns: repeat(4, calc(25% - 1.5rem));
+    gap: 2rem;
+  }
+}
+

@@ -1,0 +1,180 @@
+/*
+ * Layout Custom CSS
+ *
+ */
+
+.layout {
+  padding: 0 1.5rem;
+}
+.layout--onecol {
+  padding: 0;
+}
+.grid-row .layout {
+  padding: 0;
+}
+
+/**
+ * Layout TwoCol
+ */
+
+
+@media screen and (min-width: 900px) {
+  .layout--twocol {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 0.75rem));
+    gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .layout--twocol-75-25,
+  .layout--twocol-25-75 {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .layout--twocol-75-25 {
+    grid-template-columns: calc(75% - 0.75rem) calc(25% - 0.75rem);
+  }
+  .layout--twocol-25-75 {
+    grid-template-columns: calc(25% - 0.75rem) calc(75% - 0.75rem);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .layout--twocol,
+  .layout--twocol-75-25,
+  .layout--twocol-25-75 {
+    gap: 2rem;
+  }
+  .layout--twocol {
+    grid-template-columns: repeat(2, calc(50% - 1rem));
+    gap: 2rem;
+  }
+  .layout--twocol-75-25 {
+    grid-template-columns: calc(75% - 1rem) calc(25% - 1rem);
+  }
+  .layout--twocol-25-75 {
+    grid-template-columns: calc(75% - 1rem) calc(25% - 1rem);
+  }
+}
+
+
+
+/**
+ * Layout ThreeCol
+ */
+
+@media screen and (min-width: 550px) {
+  .layout--threecol_25_25_50,
+  .layout--threecol_50_25_25,
+  .layout--threecol-25-50-25  {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 0.75rem));
+    grid-template-areas: "a b" "c c";
+    gap: 1.5rem;
+  }
+  .layout--threecol_50_25_25 {
+    grid-template-areas: "a a" "b c";
+  }
+  .layout--threecol_25_25_50 .layout__region--first,
+  .layout--threecol-25-50-25 .layout__region--first,
+  .layout--threecol_50_25_25 .layout__region--first {
+    grid-area: a;
+  }
+  .layout--threecol_25_25_50 .layout__region--second,
+  .layout--threecol-25-50-25 .layout__region--third,
+  .layout--threecol_50_25_25 .layout__region--second {
+    grid-area: b;
+  }
+  .layout--threecol_25_25_50 .layout__region--third,
+  .layout--threecol-25-50-25 .layout__region--second,
+  .layout--threecol_50_25_25 .layout__region--third {
+    grid-area: c;
+  }
+}
+@media screen and (min-width: 640px) {
+  .layout--threecol{
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 0.75rem));
+    gap: 1.5rem;
+    grid-column: span 2;
+  }
+  .layout--threecol .layout__region--third{
+    grid-column: 1 / span 2;
+    width: calc(50% - 0.75rem);
+    justify-self: center;
+  }
+}
+@media screen and (min-width: 900px) {
+  .layout--threecol{
+    grid-template-columns: calc(33.333% - 1rem) calc(33.333% - 1rem) calc(33.333% - 1rem);
+  }
+  .layout--threecol .layout__region--third{
+    grid-column: initial;
+    width: initial;
+    justify-self: initial;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .layout--threecol_25_25_50 {
+    grid-template-columns: calc(25% - 1.5rem) calc(25% - 1.5rem) 50%;
+    grid-template-areas: "a b c";
+  }
+  .layout--threecol_50_25_25 {
+    grid-template-columns: 50% calc(25% - 1.5rem) calc(25% - 1.5rem);
+    grid-template-areas: "a b c";
+  }
+  .layout--threecol-25-50-25 {
+    grid-template-columns: calc(25% - 1.5rem) 50% calc(25% - 1.5rem);
+    grid-template-areas: "a b c";
+  }
+  .layout--threecol-25-50-25 .layout__region--third {
+    grid-area: c;
+  }
+  .layout--threecol-25-50-25 .layout__region--second {
+    grid-area: b;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .layout--threecol,
+  .layout--threecol_25_25_50,
+  .layout--threecol_50_25_25,
+  .layout--threecol-25-50-25 {
+    gap: 2rem;
+  }
+  .layout--threecol{
+    grid-template-columns: calc(33.333% - 1.3333rem) calc(33.333% - 1.3333rem) calc(33.333% - 1.3333rem);
+  }
+  .layout--threecol_25_25_50 {
+    grid-template-columns: calc(25% - 2rem) calc(25% - 2rem) 50%;
+  }
+  .layout--threecol_50_25_25 {
+    grid-template-columns: 50% calc(25% - 2rem) calc(25% - 2rem);
+  }
+  .layout--threecol-25-50-25 {
+    grid-template-columns: calc(25% - 2rem) 50% calc(25% - 2rem);
+  }
+}
+
+/**
+ * Layout FourCol
+ */
+
+@media screen and (min-width: 500px) {
+  .layout--fourcol {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 0.75rem));
+    gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .layout--fourcol {
+    grid-template-columns: repeat(4, calc(25% - 1.125rem));
+  }
+}
+@media screen and (min-width: 1300px) {
+  .layout--fourcol {
+    gap: 2rem;
+  }
+  .layout--fourcol {
+    grid-template-columns: repeat(4, calc(25% - 1.5rem));
+  }
+}

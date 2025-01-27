@@ -1,0 +1,30 @@
+/**
+ * @file
+ * Admin tabs styles
+ */
+
+
+.block-local-tasks-block nav ul{
+  margin:0;
+  background-color: var(--color-system--2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.8rem;
+  overflow-y: auto;
+}
+.block-local-tasks-block nav li{
+  margin:0;
+}
+.block-local-tasks-block nav li a{
+  color: var(--color-system--4);
+  text-transform: uppercase;
+  padding:0.8rem 1rem;
+  font-weight: 700;
+}
+.block-local-tasks-block nav li.is-active a,
+.block-local-tasks-block nav li a:hover{
+  color:var(--color-system--2);
+  background-color: var(--color-system--3);
+}

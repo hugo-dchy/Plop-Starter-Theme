@@ -1,0 +1,52 @@
+plop_starter.xs:
+  label: Extra Small
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+  group: plop_starter
+plop_starter.s:
+  label: Small
+  mediaQuery: '(min-width: 425px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+  group: plop_starter
+plop_starter.sm:
+  label: Small Medium
+  mediaQuery: '(min-width: 550px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+  group: plop_starter
+plop_starter.m:
+  label: Medium
+  mediaQuery: '(min-width: 750px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: plop_starter
+plop_starter.l:
+  label: Large
+  mediaQuery: '(min-width: 1000px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: plop_starter
+plop_starter.xl:
+  label: Extra Large
+  mediaQuery: '(min-width: 1440px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: plop_starter
+plop_starter.2xl:
+  label: 2X-large
+  mediaQuery: '(min-width: 1600px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: plop_starter

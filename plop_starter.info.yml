@@ -1,0 +1,23 @@
+name: Plop Starter Theme
+type: theme
+description: Plop's Drupal Starter theme.
+base theme: plop_base
+core_version_requirement: ^10 | ^11
+screenshot: screenshot.jpg
+libraries:
+  - plop_starter/plop-starter-theme
+'interface translation project': plop_starter
+'interface translation server pattern': ./sites/default/themes/%project/translations/%project.%language.po
+
+ckeditor5-stylesheets:
+  - css/ckeditor.css
+
+regions:
+  header_identity: 'Header Identity'
+  header_menu: 'Header menu'
+  admin: 'Admin'
+  highlighted: 'Highlighted'
+  content: 'Content'
+  footer: 'Footer'
+
+  active: 'Active'

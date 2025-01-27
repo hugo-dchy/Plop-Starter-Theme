@@ -1,0 +1,55 @@
+/**
+ * @file
+ * The variables.
+ *
+ * It includes styles variables for colors.
+ */
+
+/**
+ * Global variables
+ */
+
+:root {
+
+  /** Colors **/
+
+  --color-primary--1: #0e7aba;
+  --color-primary--2: #15618e;
+  --color-primary--3: #7acdff;
+  --color-primary--4: #eaf0ff;
+
+  /* --color-secondary--1: ; */
+  /* --color-tertiary--1: ; */
+
+  --color-neutral--1: #888da0;
+  --color-neutral--2: #32343c;
+  --color-neutral--3: #CBCEDB;
+  --color-neutral--4: #fff;
+
+  --color-dark: #121212;
+  --color-white: #fff;
+
+  /** System **/
+
+  --color-system--1: #888da0;
+  --color-system--2: #32343c;
+  --color-system--3: #CBCEDB;
+  --color-system--4: #fff;
+
+  /** Font Size **/
+
+  --content-size: 1rem /* 16px */;
+
+  --heading-size-l: 1.375rem /* 22px */;
+  --heading-size-m: 1.188rem /* 19px */;
+  --heading-size-s: 1.063rem /* 17px */;
+  --heading-size-xs: 0.938rem /* 15px */;
+}
+@media (min-width: 800px) {
+  :root {
+    --heading-size-l: 2.375rem /* 38px */;
+    --heading-size-m: 1.688rem /* 27px */;
+    --heading-size-s: 1.25rem /* 20px */;
+    --heading-size-xs: 1rem /* 16px */;
+  }
+}

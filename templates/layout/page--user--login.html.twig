@@ -1,0 +1,15 @@
+{% extends 'page.html.twig' %}
+
+{% block main %}
+  {{ attach_library('plop_starter/user') }}
+  <main role="main" class="main__content user-page">
+    <div class="layout-content">
+      {{ page.admin }}
+      <a id="main-content" tabindex="-1"></a>
+      <div class="grid-row grid-row--8">
+        <h1>{{ "Log in"|t }}</h1>
+      </div>
+      {{ page.content }}
+    </div>
+  </main>
+{%  endblock %}

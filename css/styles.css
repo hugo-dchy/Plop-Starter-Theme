@@ -1,0 +1,109 @@
+/**
+ * @file
+ * Styles rules
+ *
+ * Theme styles rules.
+ */
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  height: 100%;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5rem;
+  scroll-padding-top: 150px !important;
+}
+html, body {
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}
+body {
+  overflow-x: hidden;
+}
+
+/**
+ * Image
+ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/**
+ * Text
+ */
+
+p, h1, h2, h3, h4 {
+  position: relative;
+}
+h1 {
+  font-size: var(--heading-size-l);
+}
+h2 {
+  font-size: var(--heading-size-m);
+}
+h3 {
+  font-size: var(--heading-size-s);
+}
+h4 {
+  font-size: var(--heading-size-xs);
+}
+p {
+  font-size: var(--content-size);
+}
+
+::selection {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+/**
+ * Links
+ */
+
+a {
+  color: var(--color-brand--1);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/**
+ * Toolbar Fixed Styles
+ */
+
+.toolbar a {
+  font-family: "Source Sans Pro","Lucida Grande",Verdana,sans-serif;
+  font-weight: normal;
+}
+
+/**
+ * Table
+ */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+table tr:first-child td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--color-primary--2);
+  color: var(--color-neutral--4);
+  font-weight: 700;
+}

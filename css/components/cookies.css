@@ -1,0 +1,28 @@
+/*
+ * Cookies module custom colors
+ */
+
+.cookiesjsr-banner, .cookiesjsr-btn{
+  background-color: var(--color-system--2);
+}
+.cookiesjsr-btn.important{
+  color:var(--color-system--2);
+}
+
+.cookiesjsr-service-group.active .cookiesjsr-service-group--content,
+.cookiesjsr-service-group.active .cookiesjsr-service-group--tab{
+  background-color: var(--color-system--2);
+}
+.cookiesjsr-btn.invert{
+  border-color: var(--color-system--2);
+  color: var(--color-system--2)
+}
+.cookiesjsr-btn.important.invert{
+  border-color: var(--color-system--2);
+  background-color: var(--color-system--2);
+}
+.cookiesjsr-service--always-on span{
+  padding:0.5rem 1rem;
+  border:2px solid var(--color-system--4);
+  font-weight: 700;
+}
