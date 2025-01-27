@@ -1,0 +1,24 @@
+<header role="banner" class="header">
+  <div class="header__brand">
+    {{ page.header_identity }}
+    {% if page.header_menu|render %}
+      <div class="menu-toggle">
+        <button class="menu-toggle__button">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    {% endif %}
+  </div>
+  {% if page.header_menu|render %}
+    <div class="header__menu">
+      <div class="menu__main">
+        {{ page.header_menu }}
+      </div>
+      <button data-action="search-tigger" class="header__search-button">
+        {{"Search"|t}}
+      </button>
+    </div>
+  {% endif %}
+</header>
